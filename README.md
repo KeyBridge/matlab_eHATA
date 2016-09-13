@@ -11,9 +11,9 @@ Version 1.0 release contains the following files and folders:
 
 ********************************** Files ***************************************
 
-README                 			- This file.
+README                                  - This file.
 
-ExtendedHata_PropLoss.m 		- The main function to compute the extended Hata propagation loss.
+ExtendedHata_PropLoss.m                 - The main function to compute the extended Hata propagation loss.
 
 ExtendedHata_MedianBasicPropLoss.m 	- A function to compute median basic transmission loss.
 
@@ -33,11 +33,7 @@ piecelin.m 			 	- A function to get piecewise linear interpolation. It can be do
 
 doc					- A folder contains a short tutorial explaining how to use the code.
 							
-tests					- A folder contains MATLAB scripts and a .mat file used to test each function. 
-							  
-					Accuracy of the ExtendHata_MedianBasicPropLoss.m function, which is deterministic and does  not depend on terrain information, has been validated by comparing with Paul McKenna's results.
-										
-					However, other functions, which are not deterministic and depend on terrain information, has been tested using only a subset of terrain data. These functions might need more testing against reference data.
+tests					- A folder contains MATLAB scripts and a .mat file used to test each function. Note, accuracy of the ExtendHata_MedianBasicPropLoss.m function, which is independent of site-specific terrain data, has been validated by comparing with Paul McKenna's results. However, other functions, which depend on site-specific terrain information, has been tested using only a subset of terrain data. These functions might need more testing against reference data.
 
 ********************************************************************************
 
@@ -90,16 +86,20 @@ References:
     Information Administration, 3.5 GHz Exclusion Zone Analyses and 
     Methodology (Jun. 18, 2015), available at 
     http://www.its.bldrdoc.gov/publications/2805.aspx.
+    
 [2] Y. Okumura, E. Ohmori, T. Kawano, and K. Fukuda, Field strength and
     its variability in VHF and UHF land-mobile radio service, Rev. Elec. 
     Commun. Lab., 16, 9-10, pp. 825-873, (Sept.-Oct. 1968).
+    
 [3] M. Hata, Empirical formula for propagation loss in land mobile radio
     services, IEEE Transactions on Vehicular Technology, VT-29, 3,
     pp. 317-325 (Aug. 1980).
+    
 [4] Anita G. Longley, Radio Propagation in Urban Areas, United States 
     Department of Commerce, Office of Telecommunications, OT Report 
     78-144 (Apr.1978), available at 
     http://www.its.bldrdoc.gov/publications/2674.aspx.
+    
 	
 ********************************************************************************
 
