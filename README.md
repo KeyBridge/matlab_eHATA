@@ -9,7 +9,7 @@ https://github.com/usnistgov/eHATA
 
 Version 1.0 release contains the following files and folders:
 
-********************************** Files ***************************************
+********************************************** Files *******************************************************
 
 README                                  - This file.
 
@@ -35,9 +35,7 @@ doc					- A folder contains a short tutorial explaining how to use the code.
 							
 tests					- A folder contains MATLAB scripts and a .mat file used to test each function. Note, accuracy of the ExtendHata_MedianBasicPropLoss.m function, which is independent of site-specific terrain data, has been validated by comparing with Paul McKenna's results. However, other functions, which depend on site-specific terrain information, has been tested using only a subset of terrain data. These functions might need more testing against reference data.
 
-********************************************************************************
-
-********************************************************************************
+*********************************************** Add Path *********************************
 
 The folder containing the eHATA code needs to be added to the MATLAB path 
 before use.
@@ -45,13 +43,10 @@ before use.
 This can be accomplished by running the 'addpath' command from the 
 matlab command prompt. For example:
 
->> addpath('C:\MATLAB\eHATA')
+ addpath('C:\MATLAB\eHATA')
 
-********************************************************************************
+******************************************Legal Notice**************************************
 
-********************************************************************************
-
-Legal Notice:
 This software was developed by employees of the National Institute of Standards 
 and Technology (NIST), an agency of the Federal Government. Pursuant to 
 title 17 United States Code Section 105, works of NIST employees are not 
@@ -77,11 +72,8 @@ Distributions of NIST software should also include copyright and
 licensing statements of any third-party software that are legally bundled 
 with the code in compliance with the conditions of those licenses. 
 
-********************************************************************************
+****************************************** References **************************************
 
-********************************************************************************
-
-References: 
 [1] U.S. Department of Commerce, National Telecommunications and 
     Information Administration, 3.5 GHz Exclusion Zone Analyses and 
     Methodology (Jun. 18, 2015), available at 
@@ -101,6 +93,6 @@ References:
     http://www.its.bldrdoc.gov/publications/2674.aspx.
     
 	
-********************************************************************************
+******************************************Happy Coding **************************************
 
 
