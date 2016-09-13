@@ -7,7 +7,7 @@ version of the code can be found at:
 
 https://github.com/usnistgov/eHATA
 
-*****Files*******************************************************************************************************
+***Files*******************************************************************************************************
 
 Version 1.0 release contains the following files and folders:
 
@@ -35,7 +35,7 @@ doc					- A folder contains a short tutorial explaining how to use the code.
 							
 tests					- A folder contains MATLAB scripts and a .mat file used to test each function. Note, accuracy of the ExtendHata_MedianBasicPropLoss.m function, which is independent of site-specific terrain data, has been validated by comparing with Paul McKenna's results. However, other functions, which depend on site-specific terrain information, has been tested using only a subset of terrain data. These functions might need more testing against reference data.
 
-*****Add Path****************************************************************************************************
+***Add Path****************************************************************************************************
 
 The folder containing the eHATA code needs to be added to the MATLAB path 
 before use.
@@ -45,7 +45,7 @@ matlab command prompt. For example:
 
  addpath('C:\MATLAB\eHATA')
 
-*****Legal Notice***********************************************************************************************
+***Legal Notice************************************************************************************************
 
 This software was developed by employees of the National Institute of Standards 
 and Technology (NIST), an agency of the Federal Government. Pursuant to 
@@ -72,7 +72,7 @@ Distributions of NIST software should also include copyright and
 licensing statements of any third-party software that are legally bundled 
 with the code in compliance with the conditions of those licenses. 
 
-*****References**************************************************************************************************
+***References**************************************************************************************************
 
 [1] U.S. Department of Commerce, National Telecommunications and 
     Information Administration, 3.5 GHz Exclusion Zone Analyses and 
@@ -93,6 +93,6 @@ with the code in compliance with the conditions of those licenses.
     http://www.its.bldrdoc.gov/publications/2674.aspx.
     
 	
-*****Happy Coding********************************************************************************************
+
 
 
