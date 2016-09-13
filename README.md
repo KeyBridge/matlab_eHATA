@@ -7,7 +7,7 @@ version of the code can be found at:
 
 https://github.com/usnistgov/eHATA
 
-***Files*********************************************************************************************************
+*****Files*******************************************************************************************************
 
 Version 1.0 release contains the following files and folders:
 
