@@ -7,7 +7,7 @@ version of the code can be found at:
 
 https://github.com/usnistgov/eHATA
 
-<h2> FILES </h2>
+<h2> Files </h2>
 
 Version 1.0 release contains the following files and folders:
 
@@ -72,7 +72,7 @@ RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
 licensing statements of any third-party software that are legally bundled 
 with the code in compliance with the conditions of those licenses. 
 
-<h2> REFERENCES </h2>
+<h2> References </h2>
 
 <p>[1] U.S. Department of Commerce, National Telecommunications and 
     Information Administration, 3.5 GHz Exclusion Zone Analyses and 
