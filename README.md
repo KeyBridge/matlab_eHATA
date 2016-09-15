@@ -31,9 +31,9 @@ ExtendedHata_LocationVariability.m  	- A function to compute the standard deviat
 
 piecelin.m 			 	- A function to get piecewise linear interpolation. It can be downloaded at:								  https://www.mathworks.com							  
 
-doc					- A folder contains a short tutorial explaining how to use the code. Please see [Tutorial] (https://github.com/usnistgov/eHATA/doc)
+doc					- A folder contains a short tutorial explaining how to use the code. Please see [Tutorial] (https://github.com/usnistgov/eHATA/tree/master/doc)
 							
-tests					- A folder contains MATLAB scripts and a .mat file used to test each function. Please see [Test scripts] (https://github.com/usnistgov/eHATA/tests)
+tests					- A folder contains MATLAB scripts and a .mat file used to test each function. Please see [Test scripts] (https://github.com/usnistgov/eHATA/tree/master/tests)
 <p>Note, accuracy of the ExtendHata_MedianBasicPropLoss.m function, which is independent of site-specific terrain data, has been validated by comparing with Paul McKenna's results. However, other functions, which depend on site-specific terrain information, has been tested using only a subset of terrain data. These functions might need more testing against reference data.
 
 <h2> Add Path </h2>
@@ -44,7 +44,7 @@ before use.
 <p>This can be accomplished by running the 'addpath' command from the 
 matlab command prompt. For example:
 
- >> addpath('C:\MATLAB\eHATA')
+<p style="text-indent: 5em;"></p> addpath('C:\MATLAB\eHATA')
 
 <h2> Copyrights and Disclaimers </h2>
 
