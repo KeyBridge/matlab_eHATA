@@ -43,7 +43,7 @@ before use.
 <p>This can be accomplished by running the 'addpath' command from the 
 matlab command prompt. For example:
 
-<p style="text-indent: 5em;"></p> addpath('C:\MATLAB\eHATA')
+&nbsp; &nbsp; &nbsp; addpath('C:\MATLAB\eHATA')
 
 <h2> Copyrights and Disclaimers </h2>
 
