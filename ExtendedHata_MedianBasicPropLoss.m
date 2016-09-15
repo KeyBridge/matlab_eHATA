@@ -143,19 +143,12 @@ R = sqrt((d*1e3)^2 + (hb-hm)^2);
 % Compute free space loss 
 Lfs = 20*log10(f) + 20*log10(R) - 27.56;
 
-% % Compute power law exponent (Eqn (A-13) of [1])
-% if (d>=1 && d<=dbp)
-%     n = 0.1*(24.9-6.55*log10(hb));
-% elseif (d>dbp && d<=100)
-%     n = 2*(3.27*log10(hb) - 0.67*(log10(hb))^2 - 1.75);
-% end
-
 % Compute power law exponent (Eqn (A-13) of [1]) (Note: the conditions have 
 % been relaxed to account for distances < 1 km or > 100 km)
 if (d<=dbp)
-    n = 0.1*(24.9-6.55*log10(hb));
+    n = nl;
 elseif (d>dbp)
-    n = 2*(3.27*log10(hb) - 0.67*(log10(hb))^2 - 1.75);
+    n = nh;
 end
 
 % Compute basic median attenuation relative to free space at break point
