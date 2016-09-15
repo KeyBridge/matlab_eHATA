@@ -1,13 +1,13 @@
-September 01, 2016
+<h2> EXTENDED HATA PROPAGATION MODEL MATLAB CODE </h2>
 
 The Extended Hata (eHATA) propagation model code was implemented by employees 
 of the National Institute of Standards and Technology (NIST), Communications 
 Technology Laboratory (CTL). The code was written in MATLAB and the latest 
 version of the code can be found at:
 
-https://github.com/usnistgov/eHATA
+(https://github.com/usnistgov/eHATA)
 
-***Files******************************************************************************************************************************
+<h2> FILES </h2>
 
 Version 1.0 release contains the following files and folders:
 
@@ -29,25 +29,26 @@ ExtendedHata_MixedPathCorr.m  		- A function to compute mixed land-sea path corr
 
 ExtendedHata_LocationVariability.m  	- A function to compute the standard deviation estimate of the location variability for urban and suburban environments. 
 
-piecelin.m 			 	- A function to get piecewise linear interpolation. It can be downloaded at:								  https://www.mathworks.com							  
+piecelin.m 			 	- A function to get piecewise linear interpolation. It can be downloaded at:								  (https://www.mathworks.com)							  
 
-doc					- A folder contains a short tutorial explaining how to use the code.
+doc					- A folder contains a short tutorial explaining how to use the code. Please see [Tutorial] (eHATA/doc)
 							
-tests					- A folder contains MATLAB scripts and a .mat file used to test each function. Note, accuracy of the ExtendHata_MedianBasicPropLoss.m function, which is independent of site-specific terrain data, has been validated by comparing with Paul McKenna's results. However, other functions, which depend on site-specific terrain information, has been tested using only a subset of terrain data. These functions might need more testing against reference data.
+tests					- A folder contains MATLAB scripts and a .mat file used to test each function. Please see [Tests] (eHATA/tests)
+<p>Note, accuracy of the ExtendHata_MedianBasicPropLoss.m function, which is independent of site-specific terrain data, has been validated by comparing with Paul McKenna's results. However, other functions, which depend on site-specific terrain information, has been tested using only a subset of terrain data. These functions might need more testing against reference data.
 
-***Add Path***************************************************************************************************************************
+<h2> Add Path </h2>
 
-The folder containing the eHATA code needs to be added to the MATLAB path 
+<p>The folder containing the eHATA code needs to be added to the MATLAB path 
 before use.
 
-This can be accomplished by running the 'addpath' command from the 
+<p>This can be accomplished by running the 'addpath' command from the 
 matlab command prompt. For example:
 
- addpath('C:\MATLAB\eHATA')
+ >> addpath('C:\MATLAB\eHATA')
 
-***Legal Notice***********************************************************************************************************************
+<h2> Copyrights and Disclaimers </h2>
 
-This software was developed by employees of the National Institute of Standards 
+<p>This software was developed by employees of the National Institute of Standards 
 and Technology (NIST), an agency of the Federal Government. Pursuant to 
 title 17 United States Code Section 105, works of NIST employees are not 
 subject to copyright protection in the United States and are considered to 
@@ -55,7 +56,7 @@ be in the public domain. Permission to freely use, copy, modify, and distribute
 this software and its documentation without fee is hereby granted, provided that 
 this notice and disclaimer of warranty appears in all copies.
 
-THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTY OF ANY KIND, EITHER 
+<p>THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTY OF ANY KIND, EITHER 
 EXPRESSED, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTY 
 THAT THE SOFTWARE WILL CONFORM TO SPECIFICATIONS, ANY IMPLIED WARRANTIES OF 
 MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND FREEDOM FROM INFRINGEMENT, 
@@ -68,26 +69,26 @@ OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR PROPERTY OR
 OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT OF THE 
 RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
 
-Distributions of NIST software should also include copyright and 
+<p>Distributions of NIST software should also include copyright and 
 licensing statements of any third-party software that are legally bundled 
 with the code in compliance with the conditions of those licenses. 
 
-***References*************************************************************************************************************************
+<h2> REFERENCES </h2>
 
-[1] U.S. Department of Commerce, National Telecommunications and 
+<p>[1] U.S. Department of Commerce, National Telecommunications and 
     Information Administration, 3.5 GHz Exclusion Zone Analyses and 
     Methodology (Jun. 18, 2015), available at 
     http://www.its.bldrdoc.gov/publications/2805.aspx.
     
-[2] Y. Okumura, E. Ohmori, T. Kawano, and K. Fukuda, Field strength and
+<p>[2] Y. Okumura, E. Ohmori, T. Kawano, and K. Fukuda, Field strength and
     its variability in VHF and UHF land-mobile radio service, Rev. Elec. 
     Commun. Lab., 16, 9-10, pp. 825-873, (Sept.-Oct. 1968).
     
-[3] M. Hata, Empirical formula for propagation loss in land mobile radio
+<p>[3] M. Hata, Empirical formula for propagation loss in land mobile radio
     services, IEEE Transactions on Vehicular Technology, VT-29, 3,
     pp. 317-325 (Aug. 1980).
     
-[4] Anita G. Longley, Radio Propagation in Urban Areas, United States 
+<p>[4] Anita G. Longley, Radio Propagation in Urban Areas, United States 
     Department of Commerce, Office of Telecommunications, OT Report 
     78-144 (Apr.1978), available at 
     http://www.its.bldrdoc.gov/publications/2674.aspx.
