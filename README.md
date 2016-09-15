@@ -15,22 +15,21 @@ Version 1.0 release contains the following files and folders:
 
 - ExtendedHata_PropLoss.m: The main function to compute the extended Hata propagation loss.
 
-ExtendedHata_MedianBasicPropLoss.m 	- A function to compute median basic transmission loss.
+- ExtendedHata_MedianBasicPropLoss.m: A function to compute median basic transmission loss.
 
-ExtendedHata_EffHeightCorr.m 		- A function to compute terminals's "effective height" corrections.
+- ExtendedHata_EffHeightCorr.m: A function to compute terminals's "effective height" corrections.
 
-ExtendedHata_RollingHillyCorr.m     	- A function to compute "median" and "fine" corrections for rolling hilly terrain.
+- ExtendedHata_RollingHillyCorr.m: A function to compute "median" and "fine" corrections for rolling hilly terrain.
 
-ExtendedHata_GeneralSlopeCorr.m 	- A function to compute general slope of terrain correction.
+- ExtendedHata_GeneralSlopeCorr.m: A function to compute general slope of terrain correction.
 
-ExtendedHata_IsolatedRidgeCorr.m    	- A function to compute isolated mountain (or isolated ridge) correction.
+- ExtendedHata_IsolatedRidgeCorr.m: A function to compute isolated mountain (or isolated ridge) correction.
 
-ExtendedHata_MixedPathCorr.m  		- A function to compute mixed land-sea path correction.
+- ExtendedHata_MixedPathCorr.m: A function to compute mixed land-sea path correction.
 
-ExtendedHata_LocationVariability.m  	- A function to compute the standard deviation estimate of the location variability for urban and suburban environments. 
+- ExtendedHata_LocationVariability.m: A function to compute the standard deviation estimate of the location variability for urban and suburban environments. 
 
-piecelin.m 			 	- A function to get piecewise linear interpolation. It can be downloaded at:								  https://www.mathworks.com							  
-
+- piecelin.m: A function to get piecewise linear interpolation. It can be downloaded at https://www.mathworks.com				
 - doc: A folder contains a short tutorial explaining how to use the code. Please see [Tutorial] (https://github.com/usnistgov/eHATA/tree/master/doc)
 							
 - tests: A folder contains MATLAB scripts and a .mat file used to test each function. Please see [Test scripts] (https://github.com/usnistgov/eHATA/tree/master/tests)
