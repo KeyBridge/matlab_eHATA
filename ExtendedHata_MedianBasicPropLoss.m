@@ -180,7 +180,7 @@ MedianAbmEH = MedianLossEH - Lfs;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if strcmp(region, 'Suburban')   % adjust for suburban area 
     MedianLossEH = MedianLossEH - (54.19 - 33.30*log10(f) + 6.25*(log10(f))^2);
-                                    % (Eqn. (A-10) of [1])
+                                    % (Eqn. (A-14) of [1])
     MedianAbmEH = MedianLossEH - Lfs; 
 end   
 
