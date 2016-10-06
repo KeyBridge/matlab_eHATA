@@ -102,14 +102,12 @@ d_point_Rx_m = (numPoints-1:-1:0) * pointRes_m;
 radius_m = 10*1e3;
 elevInside_m = pointElev_m(d_point_Rx_m <= radius_m);
 
-% Get empirical cumulative distribution function
-[f, x] = ecdf(elevInside_m);
-
 % Compute terrain height which is exceeded for 10%, 90%, and 50% of the 
 % terrain elevations, respectively (see Figure 5 of [2])
-h_10 = interp1(f,x,(1-0.1));
-h_90 = interp1(f,x,(1-0.9));
-h_50 = interp1(f,x,(1-0.5));
+hVec = prctile(elevInside_m, [90, 10, 50]);
+h_10 = hVec(1);
+h_90 = hVec(2);
+h_50 = hVec(3);
 
 % Compute terrain irregularity parameter(i.e.,terrain undulation parameter)
 delta_h = h_10 - h_90;
