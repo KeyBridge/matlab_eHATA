@@ -133,7 +133,8 @@ end
 
 % Compute d1 (distance from Tx to mountain) and d2 (distance from mountain 
 % to Rx)
-d1_km = loc_km;        
+%d1_km = loc_km;        % May be bug in here, loc_km - is not distance in km in this case!
+d1_km = d_Tx_point_km(loc_km);        
 d2_km = d_Tx_Rx_km - d1_km;
 
 % Get the curves from Figure 31 of [2]
