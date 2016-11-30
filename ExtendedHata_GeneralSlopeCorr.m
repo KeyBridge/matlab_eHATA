@@ -97,6 +97,7 @@ for ii = 1: length(intervalVec_km)
     elevTemp_m = pointElev_m(d_point_Rx_km <= intervalVec_km(ii));
         
     % Get the slope for this interval
+    % BUG(?) polyfit fits the entire curve, not the sample point    
     p = polyfit(0:length(elevTemp_m)-1, elevTemp_m, 1);
     slope = p(1);
     
