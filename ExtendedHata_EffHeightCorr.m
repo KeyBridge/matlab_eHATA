@@ -104,6 +104,8 @@ elseif  (d_Tx_Rx_km >= d_min_km) && (d_Tx_Rx_km <= d_max_km)
     hm_eff_m = (hm_ant_m + pointElev_m(end)) - h_ga_m;
     
     % If negative, set effective height to average ground height
+     % BUG: hb_ga_m measures meters AMSL, not meters above ground level
+     % See [2] Fig. 4. Want h_te, not h_ga
     if hb_eff_m < 0
         hb_eff_m = h_ga_m;
     end
@@ -126,7 +128,9 @@ else
     % Compute terminal's "effective height" correction
     hb_eff_m = (hb_ant_m + pointElev_m(1)) - hb_ga_m;
     
-    % If negative, set effective height to average ground height
+    % If negative, set effective height to average ground height.
+    % BUG: hb_ga_m measures meters AMSL, not meters above ground level
+     % See [2] Fig. 4. Want h_te, not h_ga
     if hb_eff_m < 0
         hb_eff_m = hb_ga_m;
     end

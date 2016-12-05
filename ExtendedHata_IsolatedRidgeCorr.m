@@ -133,7 +133,9 @@ end
 
 % Compute d1 (distance from Tx to mountain) and d2 (distance from mountain 
 % to Rx)
-d1_km = loc_km;        
+% d1_km = loc_km;        
+% BUG : d1_km is a distance measure, not index pointer
+d1_km = d_Tx_point_km(loc_km);
 d2_km = d_Tx_Rx_km - d1_km;
 
 % Get the curves from Figure 31 of [2]
